@@ -1,0 +1,92 @@
+.icons-section {
+  position: fixed;
+  max-width: var(--cMaxWidth);
+  width: var(--cWidth);
+  bottom: 0;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-icons {
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+  padding: 10px;
+}
+.social-icons:hover {
+  transition: 0.3s;
+  color: var(--backgroundColor);
+}
+.social-icons a:hover {
+  color: var(--backgroundColor);
+  /* transform: scale(1.2); */
+}
+.social-icons span a {
+  font-size: 20px;
+  color: var(--accentColor);
+  text-shadow: var(--neonGlow);
+  display: flex;
+}
+.social-icons span {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  background: rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.social-icons span:hover {
+  background: rgba(0, 242, 255, 0.2);
+  border-color: var(--accentColor);
+  box-shadow: var(--neonGlow);
+}
+.social-icons a {
+  --siLeft: 50%;
+  --siTop: 50%;
+  position: absolute;
+  left: var(--siLeft, 50%);
+  top: var(--siTop, 50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-size: 23px;
+  will-change: left, top;
+  transition: transform 0.3s ease-out;
+}
+.resume-button {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  gap: 10px;
+  bottom: 60px;
+  right: 0;
+  width: auto;
+  text-wrap: nowrap;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accentColor);
+  text-shadow: var(--neonGlow);
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.resume-button .icon-bubble {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 242, 255, 0.2);
+  border: 1px solid var(--accentColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--neonGlow);
+}
